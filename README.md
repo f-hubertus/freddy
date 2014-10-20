@@ -1,4 +1,0 @@
-freddy
-======
-
-adjusted FFPred scripts
