@@ -1,0 +1,20 @@
+#------------------------------------------------------------------------------
+# 
+#                       Put all relevant paths here
+#  (absolute paths OR relative paths starting inside the main FFPred2 folder)
+# 
+#------------------------------------------------------------------------------
+
+PFILT		bin
+BLAST		bin
+MAKEMAT		bin
+SEQ2MTX         bin
+PSIPRED         /scratch2/floris/function_prediction/FFPred2/featurama/software/psipred/
+DISOPRED        /scratch2/floris/function_prediction/FFPred2/featurama/software/disopred/
+MEMSAT          /scratch2/floris/function_prediction/FFPred2/featurama/software/memsat-svm
+LOWC            bin
+PATH            jobs
+DB              /scratch2/floris/function_prediction/uniprot/uniprot_cyanobacteria_viridiplantae
+MASK_DB         /scratch2/floris/function_prediction/uniprot/uniprot_cyanobacteria_viridiplantae.masked
+
+#------------------------------------------------------------------------------
