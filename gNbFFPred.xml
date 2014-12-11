@@ -1,0 +1,33 @@
+<tool id="predtools" name="Function Prediction" version="2.0" >
+
+  <description>FFPred prediction tool to predict GO terms for protein sequences.
+	       Does not perform BLAST! 
+
+	       Requires: .fsa, .masked3.chk, .umasked2.chk, .umasked3.chk		
+	       
+	     
+  </description>
+
+  <command interpreter="perl">gNbFFPred.pl -i '$input1' -i '$input2' -i '$input3' -i '$input4' 2> FFPred_error_log.txt</command>
+<!-- -o $'output' define or default? -->
+
+  <inputs>
+    <param name="input1" type="data" label="Fasta file" format="fasta"/>
+
+    <param name="input2" type="data" label="masked3.chk file"/>
+
+    <param name="input3" type="data" label="unmasked2.chk file"/>
+
+    <param name="input4"  type="data" label="unmasked3.chk file"/>
+  </inputs>
+
+<!--
+	<help>This tool predicts functions and features from a fasta protein sequence.Still to be adjusted!:description; **outputoutputs/data; format, name  
+	**The ouput is placed in the default "out" folder (/FFPred2/out)
+	       
+	Multiple files as input! -> is covered
+	Multiple files as output! -> fedge .lax_all only!!
+	</help>
+-->
+
+</tool>
